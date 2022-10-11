@@ -11,16 +11,24 @@ public class Movie {
 	private int minutes;
 	private String poster;
 	
-	public Movie(String id, String title, int year, String genres, String director, String country, int minutes,
-			String poster) {
-		this.id = id;
-		this.title = title;
-		this.year = year;
+	
+	
+	public Movie(String id, String title, String year, String genres) {
+		this.id = id.trim();
+		this.title = title.trim();
+		this.year = Integer.parseInt(year.trim());
+		this.genres = genres;
+	}
+
+	public Movie(String id, String title, String year, String genres, String director, String country, String poster, int minutes) {
+		this.id = id.trim();
+		this.title = title.trim();
+		this.year = Integer.parseInt(year.trim());
 		this.genres = genres;
 		this.director = director;
 		this.country = country;
-		this.minutes = minutes;
 		this.poster = poster;
+		this.minutes = minutes;
 	}
 
 	public String getId() {
