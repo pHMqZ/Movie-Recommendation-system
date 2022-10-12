@@ -79,33 +79,6 @@ public class FirstRatings {
 		System.out.println("Total comedy movies: " + countGenre);
 		System.out.println("Total movie > 150 min: " + countLen);
 
-//		HashMap<String, Integer> moviesDirectors = new HashMap<String, Integer>();
-//		for(Movie movie : movies) {
-//			String [] directors = movie.getDirector().split(",");
-//			for(String director : directors) {
-//				director = director.trim();
-//				if(moviesDirectors.containsKey(director)) {
-//					moviesDirectors.put(director, moviesDirectors.get(director)+1);
-//				moviesDirectors.put(director,1);
-//				}
-//			}
-//		}
-//		
-//		int maxMovies = 0;
-//		for (String director : moviesDirectors.keySet()) {
-//			if(moviesDirectors.get(director) > maxMovies) {
-//				maxMovies = moviesDirectors.get(director);			}
-//		}
-//		
-//		ArrayList<String> directorsList = new ArrayList<String>();
-//		for (String director : moviesDirectors.keySet()) {
-//			if(moviesDirectors.get(director) == maxMovies) {
-//				directorsList.add(director);
-//			}
-//		}
-//		
-//		 System.out.println("Max number of movies directed by one director: " + maxMovies);
-//	     System.out.println("Directors who directed that many movies are " + directorsList);
 
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
 		for (Movie currMovie : movies) {
