@@ -1,6 +1,6 @@
 package pms.coursera.duke;
 
-public class Rating {
+public class Rating implements Comparable<Rating>{
 	
 	private String item;
 	private Double value;
