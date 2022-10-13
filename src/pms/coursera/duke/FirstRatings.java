@@ -50,7 +50,7 @@ public class FirstRatings {
 						raters.get(i).addRating(movieId, movieRating);
 				}
 			else {
-				Rater newRater = new Rater(raterId);
+				Rater newRater = new EfficientRater(raterId);
 				raters.add(newRater);
 				newRater.addRating(movieId, movieRating);
 			}
